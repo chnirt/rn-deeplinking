@@ -14,7 +14,7 @@ export function DetailScreen() {
   return (
     <View>
       <Text>DetailScreen</Text>
-      {/* <Text>{userId ?? deepLinkingUserId}</Text> */}
+      <Text>{userId ?? deepLinkingUserId}</Text>
       <Button onPress={() => navigation.navigate('Home')} title="Home" />
     </View>
   );

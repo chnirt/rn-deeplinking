@@ -7,7 +7,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {HomeScreen, DetailScreen} from './src/screens';
 
 const linking = {
-  prefixes: ['chnirtapp://'],
+  prefixes: ['chnirtapp://', 'https://chnirtapp.com'],
   config: {
     screens: {
       Home: 'home',
