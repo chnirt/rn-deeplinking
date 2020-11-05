@@ -6,15 +6,15 @@ export function DetailScreen() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const deepLinkingUserId = route?.params?.params?.userId;
-  const userId = route?.params?.userId;
+  const deepLinkingCode = route?.params?.params?.code;
+  const code = route?.params?.code;
 
-  console.log(deepLinkingUserId, userId);
+  console.log(deepLinkingCode, code);
 
   return (
     <View>
       <Text>DetailScreen</Text>
-      <Text>{userId ?? deepLinkingUserId}</Text>
+      <Text>{code ?? deepLinkingCode}</Text>
       <Button onPress={() => navigation.navigate('Home')} title="Home" />
     </View>
   );

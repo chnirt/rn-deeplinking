@@ -7,11 +7,11 @@ import {createStackNavigator} from '@react-navigation/stack';
 import {HomeScreen, DetailScreen} from './src/screens';
 
 const linking = {
-  prefixes: ['chnirtapp://', 'https://chnirtapp.com'],
+  prefixes: ['chnirtapp://'],
   config: {
     screens: {
       Home: 'home',
-      Detail: 'detail/:userId',
+      Detail: 'detail/:code',
     },
   },
 };
